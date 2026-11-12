@@ -1,0 +1,31 @@
+class Register():
+    def __init__(self,ge,ag,sc,se):
+        self.gender=ge
+        self.age=ag
+        self.score=sc
+        self.seat=se
+    def Printing(self):
+        print(self.gender)
+        print(self.age)
+        print(self.score)
+        print(self.seat)
+object1=Register("boy",16,87,26)
+object2=Register("girl",13,100,25)
+object1.Printing()
+object2.Printing()
+class Car(Register):
+    def __init__(self,ge,ag,sc,se,clr,hl,s,hp,):
+        super().__init__(ge,ag,sc,se)
+        self.color=clr
+        self.headlights=hl
+        self.speed=s
+        self.horspower=hp
+    def Printing(self):
+        super().Printing()
+        print(self.color)
+        print(self.headlights)
+        print(self.speed)
+        print(self.horspower)
+ferrari=Car("girl",23,100,2,"red","yes","rapid",572)
+
+ferrari.Printing()
